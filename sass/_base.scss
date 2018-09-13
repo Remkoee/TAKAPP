@@ -1,0 +1,59 @@
+///// Color Variables
+:root {
+    --color-primary: #F86A56;
+    --color-secondary: #FEDA6A;
+    --color-text: #0B3954;
+    --color-textinputs: #849BA9;
+}
+
+
+
+// FONT VARIABLES
+$font-primary: 'Roboto Mono', monospace;
+
+
+@font-face {
+    font-family: 'calibri_bold';
+    src: url("../fonts/calibri_bold.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: 'calibri_regular';
+    src: url("../fonts/calibri_regular.TTF") format("truetype");
+}
+
+@font-face {
+    font-family: 'calibri_light';
+    src: url("../fonts/calibri_light.TTF") format("truetype");
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+//RESPONSIVE BRAKEPOINTS
+$bp-smallest: 25em; //400px
+
+*,
+*::before,
+*::after{
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+html{
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+body{
+    font-family: $font-primary;
+    font-weight: 300;
+    display: flex;
+    justify-content: center;
+}
+
+
